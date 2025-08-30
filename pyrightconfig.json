@@ -1,0 +1,8 @@
+{
+    "typeCheckingMode": "off",
+    "reportMissingImports": false,
+    "reportMissingTypeStubs": false,
+    "reportUnusedVariable": false,
+    "reportUnusedImport": false,
+    "reportUnknownMemberType": false
+}
