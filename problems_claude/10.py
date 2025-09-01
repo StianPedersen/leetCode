@@ -23,7 +23,21 @@ def is_valid_parentheses(s):
     Output: False
     """
     # Your code here
-    pass
+    stack = []
+    p_mapping = {")": "(", "]": "[", "}": "{"}
+
+    for c in s:
+        if c in p_mapping:
+            # It is a closing bracket
+            if len(stack) == 0:
+                return False
+            if stack[-1] != p_mapping[c]:
+                return False
+            stack.pop()
+        else:
+            stack.append(c)
+
+    return len(stack) == 0
 
 
 # Test cases
