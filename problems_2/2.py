@@ -14,14 +14,32 @@ def rotate_matrix(matrix):
             [4, 5, 6],
             [7, 8, 9]]
 
+    Transpose:
+            [[1, 4, 7],
+             [2, 5, 8],
+             [3, 6, 9]]
+
     After rotation: [[7, 4, 1],
                      [8, 5, 2],
                      [9, 6, 3]]
 
+
     Note: Modify the matrix in-place and return it.
     """
     # Your code here
-    pass
+    # Transpose matrix
+    length = len(matrix[0])
+    depth = len(matrix)
+    print("M_before: ", matrix)
+    for x in range(length):
+        for y in range(x, depth):
+            tmp_2 = matrix[y][x]
+            matrix[y][x] = matrix[x][y]  # tmp
+            matrix[x][y] = tmp_2
+
+    for row in matrix:
+        row.reverse()
+    return matrix
 
 
 # Test cases
