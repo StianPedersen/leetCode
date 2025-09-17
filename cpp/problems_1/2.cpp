@@ -8,8 +8,12 @@
 
 #include <cassert>
 #include <iostream>
+#include <map>
+#include <print>
 #include <stack>
 #include <string>
+#include <vector>
+using namespace std;
 
 bool isValid(std::string s) {
   /*
@@ -27,10 +31,28 @@ bool isValid(std::string s) {
   */
 
   // Your code here
-  return false;
+  stack<char> my_stack;
+  vector<char> left_chars = {'(', '{', '['};
+  map<char, char> the_map = {{')', '('}, {'}', '{'}, {']', '['}};
+  for (std::string::iterator it = s.begin(); it != s.end(); ++it) {
+    bool found =
+        find(left_chars.begin(), left_chars.end(), *it) != left_chars.end();
+    if (found) {
+      my_stack.push(*it);
+    } else {
+      char to_check = my_stack.top();
+      my_stack.pop();
+      if (the_map[*it] != to_check) {
+        return false;
+      }
+    }
+  }
+
+  return true;
 }
 
 int main() {
+  std::println("hello world");
   assert(isValid("()") == true);
   assert(isValid("()[]{}") == true);
   assert(isValid("(]") == false);
