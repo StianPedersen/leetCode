@@ -5,6 +5,7 @@
 ### Day 1-2: Array and Hash Map Basics
 
 #### Problem 1: Two Sum
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Hash map for complement lookup
@@ -48,6 +49,7 @@ int main() {
 ```
 
 #### Problem 2: Valid Parentheses
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Stack for matching pairs
@@ -93,6 +95,7 @@ int main() {
 ```
 
 #### Problem 3: Remove Duplicates from Sorted Array
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Two pointers technique
@@ -139,6 +142,7 @@ int main() {
 ### Day 3-4: String Operations
 
 #### Problem 4: Valid Palindrome
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Two pointers + string manipulation
@@ -180,6 +184,7 @@ int main() {
 ```
 
 #### Problem 5: First Unique Character
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Hash map for counting
@@ -223,6 +228,7 @@ int main() {
 ### Day 5-6: Linked Lists and Arrays
 
 #### Problem 6: Merge Two Sorted Lists
+
 **Difficulty:** Easy  
 **Time:** 20 minutes  
 **Pattern:** Two pointers on linked lists
@@ -292,6 +298,7 @@ int main() {
 ```
 
 #### Problem 7: Best Time to Buy and Sell Stock
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Single pass with min tracking
@@ -338,6 +345,7 @@ int main() {
 ### Day 7-8: Tree Basics
 
 #### Problem 8: Maximum Depth of Binary Tree
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Tree traversal (DFS)
@@ -398,6 +406,7 @@ int main() {
 ```
 
 #### Problem 9: Same Tree
+
 **Difficulty:** Easy  
 **Time:** 15 minutes  
 **Pattern:** Tree traversal comparison
@@ -462,6 +471,7 @@ int main() {
 ### Day 9-10: Practice and Review
 
 #### Problem 10: Contains Duplicate
+
 **Difficulty:** Easy  
 **Time:** 10 minutes  
 **Pattern:** Hash set for uniqueness check
@@ -529,14 +539,17 @@ g++ -std=c++17 -o solution problem.cpp
 ```
 
 Or with debugging symbols:
+
 ```bash
 g++ -std=c++17 -g -o solution problem.cpp
 ./solution
 ```
 
 ## Difficulty Progression
+
 - Start with Easy problems (1-3, 5, 7, 10)
 - Move to slightly more complex Easy problems (4, 6, 8-9)
 - Master these patterns before moving to Medium problems
 
 Good luck with your C++ practice!
+
